@@ -1,0 +1,35 @@
+.hero {
+  background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), 
+              url('/images/hero-bg.jpg');
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}

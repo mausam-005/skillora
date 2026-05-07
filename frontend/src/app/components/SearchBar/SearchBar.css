@@ -1,0 +1,38 @@
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2.3rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.search-bar button {
+  padding: 0 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button:hover {
+  background-color: #4338ca;
+}
+
+.search-bar svg {
+  width: 20px;
+  height: 20px;
+}

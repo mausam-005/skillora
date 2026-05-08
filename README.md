@@ -9,7 +9,7 @@
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-[About The Project](#-about-the-project) • [Key Features](#-key-features) • [Folder Structure](#-folder-structure) • [API Reference](#-api-reference) • [Quick Start](#-quick-start) • [Roadmap](#-roadmap)
+[About The Project](#-about-the-project) • [Key Features](#-key-features) • [Folder Structure](#-folder-structure) • [API Reference](#-api-reference) • [Quick Start](#-quick-start)
 
 </div>
 
@@ -79,12 +79,12 @@ The backend exposes a RESTful API running on `http://localhost:5000`.
 | :--- | :--- | :--- | :---: |
 | `POST` | `/api/auth/register` | Create a new user account | ❌ |
 | `POST` | `/api/auth/login` | Authenticate user and receive JWT | ❌ |
-| `GET` | `/api/auth/me` | Get basic info of the currently logged-in user | 🔐 |
-| `GET` | `/api/courses` | Fetch all courses (supports query filters) | ❌ |
+| `GET` | `/api/auth/me` | Get the currently logged-in user's info | ✅ |
+| `GET` | `/api/courses` | Fetch all courses (supports search/filter query params) | ❌ |
 | `GET` | `/api/courses/:id` | Fetch a single course by its MongoDB ID | ❌ |
-| `GET` | `/api/user/profile` | Get the user's populated cart and bookmarks | 🔐 |
-| `PUT` | `/api/user/bookmarks` | Toggle a course in the user's bookmarks | 🔐 |
-| `PUT` | `/api/user/cart` | Add or remove a course from the user's cart | 🔐 |
+| `GET` | `/api/user/profile` | Get the user's full profile with populated cart & bookmarks | ✅ |
+| `PUT` | `/api/user/bookmarks` | Toggle a course bookmark (add/remove) | ✅ |
+| `PUT` | `/api/user/cart` | Add or remove a course from the cart | ✅ |
 
 ---
 
@@ -126,19 +126,6 @@ npm install
 npm run dev
 ```
 > The application will be running at `http://localhost:3000`
-
----
-
-## 🗺️ Roadmap & Future Enhancements
-
-Skillora is constantly evolving. Here are the features planned for upcoming releases to make the application 100% complete:
-
-- [ ] **Stripe Checkout Integration**: Transition from a simple "cart" to a fully functional payment gateway, allowing users to securely purchase courses.
-- [ ] **Interactive Course Player**: A dedicated learning dashboard where enrolled users can watch video lectures, read materials, and track their module completion progress.
-- [ ] **Instructor Admin Panel**: A protected route for authorized admins to create, edit, and delete courses via a graphical user interface instead of database scripts.
-- [ ] **GenAI "Skill-Bot" Tutor**: Integration with Google's Gemini API to provide an on-screen AI assistant that recommends courses based on natural language user prompts (e.g., *"What course should I take to learn React?"*).
-
----
 
 <div align="center">
   <i>Built with passion using modern web technologies.</i>

@@ -1,0 +1,10 @@
+[build]
+  base    = "frontend"
+  command = "npm install && npm run build"
+  publish = "frontend/.next"
+
+[build.environment]
+  NEXT_PUBLIC_API_URL = "https://skillora-backend.onrender.com"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

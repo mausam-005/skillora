@@ -5,7 +5,7 @@ import Link from 'next/link'
 import api from '../../lib/axios'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import './cart.css'
+import './Cart.css'
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState([])
